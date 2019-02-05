@@ -1,5 +1,6 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
 
 export default [{
     input  : 'src/App.js',
@@ -11,9 +12,11 @@ export default [{
     },
     plugins: [
         babel({
-            exclude: 'node_modules/**',
-            presets: ['@babel/preset-env']
+            exclude       : 'node_modules/**',
+            presets       : ['@babel/preset-env'],
+            runtimeHelpers: true
         }),
-        resolve()
+        resolve({preferBuiltins: true, browser: true}),
+        commonjs(),
     ]
 }];

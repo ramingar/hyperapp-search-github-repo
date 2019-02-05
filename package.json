@@ -24,6 +24,8 @@
     "hyperapp": "^1.2.9",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-node-resolve": "^4.0.0"
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "superagent": "^4.1.0"
   }
 }
