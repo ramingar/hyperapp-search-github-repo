@@ -1,0 +1,29 @@
+{
+  "name": "hyperapp-search-github-repo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/rollup --config rollup.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramingar/hyperapp-search-github-repo.git"
+  },
+  "author": "Rafael Minguet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramingar/hyperapp-search-github-repo/issues"
+  },
+  "homepage": "https://github.com/ramingar/hyperapp-search-github-repo#readme",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "hyperapp": "^1.2.9",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  }
+}
